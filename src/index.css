@@ -337,7 +337,7 @@ main {
 .menu {
   display: grid;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2.5rem;
   row-gap: 3rem;
@@ -400,4 +400,44 @@ main {
   text-transform: capitalize;
   cursor: pointer;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .menu {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+    row-gap: 3rem;
+  }
+
+  .singleItem {
+    padding: 0rem;
+    background-color: var(--grey-200);
+    width: 450px;
+    height: 600px;
+    position: relative;
+  }
+
+  .categories {
+    width: 90vw;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .menu {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
 }
